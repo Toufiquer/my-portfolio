@@ -1,5 +1,6 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
 const Portfolio = ({
     portfolio: {
         projectName,
@@ -8,6 +9,7 @@ const Portfolio = ({
         liveUrl,
         server,
         client,
+        _id,
     },
 }) => {
     const img = imgUrl;
@@ -26,6 +28,10 @@ const Portfolio = ({
             Client
         </a>
     );
+    const navigate = useNavigate();
+    const handleDetails = id => {
+        navigate(`/details/${id}`);
+    };
     return (
         <div className=" ">
             <div className="p-4">
@@ -35,7 +41,15 @@ const Portfolio = ({
                     </figure>
                     <div className="card-body text-center">
                         <div className="text-xl">{projectName}</div>
-                        <div className="text-justify">{projectDescription}</div>
+                        <div className="text-justify">
+                            {projectDescription}
+                            <div
+                                onClick={() => handleDetails(_id)}
+                                className="btn btn-sm"
+                            >
+                                Details
+                            </div>
+                        </div>
                     </div>
                     <div className="flex justify-between">
                         <div className="link border w-full p-3 py-2">

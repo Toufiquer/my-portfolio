@@ -1,4 +1,5 @@
 import React from "react";
+import AboutFooter from "../Footer/AboutFooter";
 
 const About = ({ img }) => {
     return (
@@ -86,6 +87,7 @@ const About = ({ img }) => {
                     </div>
                 </div>
             </div>
+            <AboutFooter />
         </div>
     );
 };
