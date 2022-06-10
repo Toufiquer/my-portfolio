@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "../Footer/Footer";
 
 const Details = () => {
-    const id = useParams();
-    const img = "ss";
-    const projectName = "ss";
+    const [portfolio, SetPortfolio] = useState([]);
+    useEffect(() => {
+        fetch("fakeData.json")
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                SetPortfolio(data);
+            });
+    }, []);
+    console.log(portfolio);
     return (
         <div>
             <div className=" ">
@@ -16,7 +23,7 @@ const Details = () => {
                         </figure>
                         <div className="card-body text-center">
                             {/* <div className="text-xl">{id}</div> */}
-                            <div className="text-xl">{projectName}</div>
+                            <div className="text-xl">{"projectName"}</div>
                         </div>
                     </div>
                 </div>

@@ -6,7 +6,10 @@ const Project = () => {
     useEffect(() => {
         fetch("fakeData.json")
             .then(res => res.json())
-            .then(data => SetPortfolio(data));
+            .then(data => {
+                console.log(data);
+                SetPortfolio(data);
+            });
     }, []);
     return (
         <div>
