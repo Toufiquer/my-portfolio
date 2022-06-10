@@ -4,7 +4,7 @@ const Blog = () => {
     return (
         <div>
             <div className="flex items-center justify-center text-4xl h-screen">
-                COMING SOON !
+                COMING SOON
             </div>
         </div>
     );
