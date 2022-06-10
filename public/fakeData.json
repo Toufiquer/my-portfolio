@@ -1,0 +1,29 @@
+[
+    {
+        "_id": "1",
+        "projectName": "Project 1",
+        "imgUrl": "https://i.ibb.co/mG9GFS2/screencapture-assignment-12-5b625-web-app-products-2022-06-10-06-33-06.png",
+        "liveUrl": "https://assignment-12-5b625.web.app/",
+        "server": "https://github.com/Toufiquer/assignment-12-server-my-repo",
+        "client": "https://github.com/Toufiquer/assignment-12-client-my-repo",
+        "projectDescription": "This is description. This is description. This is description. This is description. This is description. This is description. "
+    },
+    {
+        "_id": "2",
+        "projectName": "Project 2",
+        "imgUrl": "https://i.ibb.co/mG9GFS2/screencapture-assignment-12-5b625-web-app-products-2022-06-10-06-33-06.png",
+        "liveUrl": "https://assignment-12-5b625.web.app/",
+        "server": "https://github.com/Toufiquer/assignment-12-server-my-repo",
+        "client": "https://github.com/Toufiquer/assignment-12-client-my-repo",
+        "projectDescription": "This is description. This is description. This is description. This is description. This is description. This is description. "
+    },
+    {
+        "_id": "3",
+        "projectName": "Project 3",
+        "imgUrl": "https://i.ibb.co/mG9GFS2/screencapture-assignment-12-5b625-web-app-products-2022-06-10-06-33-06.png",
+        "liveUrl": "https://assignment-12-5b625.web.app/",
+        "server": "https://github.com/Toufiquer/assignment-12-server-my-repo",
+        "client": "https://github.com/Toufiquer/assignment-12-client-my-repo",
+        "projectDescription": "This is description. This is description. This is description. This is description. This is description. This is description. "
+    }
+]
