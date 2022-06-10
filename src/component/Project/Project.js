@@ -4,7 +4,7 @@ import Portfolio from "./Portfolio";
 const Project = () => {
     const [portfolio, SetPortfolio] = useState([]);
     useEffect(() => {
-        fetch("fakeData.json")
+        fetch(`https://quiet-wave-28723.herokuapp.com/portfolio`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);

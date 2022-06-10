@@ -37,7 +37,7 @@ const Portfolio = ({
             <div className="p-4">
                 <div className="card w-96 bg-base-100 shadow-xl mx-auto border rounded-none">
                     <figure className="w-68 h-64 overflow-hidden hover:overflow-auto">
-                        <img className="" src={img} alt="Shoes" />
+                        <img className="" src={img} alt="Toufiquer" />
                     </figure>
                     <div className="card-body text-center">
                         <div className="text-xl">{projectName}</div>
@@ -51,14 +51,14 @@ const Portfolio = ({
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-between">
-                        <div className="link border w-full p-3 py-2">
+                    <div className="flex justify-between w-48 mr-auto gap-4 mx-6 my-2">
+                        <div className="btn btn-outline p-3 py-2">
                             {btnLiveUrl}
                         </div>
-                        <div className="link border w-full p-3 py-2">
+                        <div className="btn btn-outline p-3 py-2">
                             {btnServer}
                         </div>
-                        <div className="link border w-full p-3 py-2">
+                        <div className="btn btn-outline p-3 py-2">
                             {btnClient}
                         </div>
                     </div>
