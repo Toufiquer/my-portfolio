@@ -13,7 +13,7 @@ const Contact = () => {
     } = useForm();
     const onSubmit = e => {
         const contact = e;
-        fetch("http://localhost:3500/contact", {
+        fetch("https://quiet-wave-28723.herokuapp.com/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
