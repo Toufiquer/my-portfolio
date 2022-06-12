@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import Footer from "../Footer/Footer";
 import img from "./img.png";
 const Contact = () => {
@@ -8,9 +9,26 @@ const Contact = () => {
         register,
         handleSubmit,
         formState: { errors },
+        reset,
     } = useForm();
     const onSubmit = e => {
-        console.log(e);
+        const contact = e;
+        fetch("http://localhost:3500/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ contact }),
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.result.insertedId) {
+                    toast.success("You message was send.");
+                    reset();
+                } else {
+                    toast.error("Please try again.");
+                }
+            });
     };
 
     return (

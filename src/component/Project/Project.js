@@ -7,7 +7,6 @@ const Project = () => {
         fetch(`https://quiet-wave-28723.herokuapp.com/portfolio`)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 SetPortfolio(data);
             });
     }, []);

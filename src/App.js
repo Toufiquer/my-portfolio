@@ -4,7 +4,8 @@ import About from "./component/About/About";
 import Blog from "./component/Blog/Blog";
 import Contact from "./component/Contact/Contact";
 import Details from "./component/Details/Details";
-import Footer from "./component/Footer/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Home from "./component/Home/Home";
 import NavMenu from "./component/NavMenu/NavMenu";
 
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/blog" element={<Blog />}></Route>
                 <Route path="/details/:id" element={<Details />}></Route>
             </Routes>
+            <ToastContainer />
         </div>
     );
 }
